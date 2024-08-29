@@ -1,38 +1,310 @@
-.App {
-  text-align: center;
+@import url("https://fonts.googleapis.com/css2?family=Dancing+Script:wght@700&family=Montserrat:wght@400;600;700&display=swap");
+
+*{
+  margin: 0;
+  padding: 0;
+ 
+}
+.navbar-hr {
+  width: 250px;
+  height: 100vh;
+  background-color: #f8f9fa;
+  border-right: 1px solid #dee2e6;
+  padding: 10px;
+  position: fixed;
+  top: 0;
+  left: 0;
+  overflow-y:hidden;
+  overflow-x:hidden;
+  box-shadow: 5px 5px 10px #495057;
 }
 
-.App-logo {
-  height: 40vmin;
-  pointer-events: none;
-}
-
-@media (prefers-reduced-motion: no-preference) {
-  .App-logo {
-    animation: App-logo-spin infinite 20s linear;
+.navbar-hr img {
+  width: 200px;
+  height: 110px;
+  margin-bottom: 20px;
+  margin-left: 20px;
   }
+
+.navbar-hr ul {
+  list-style-type: none;
+  margin: 0;
+  padding: 0;
+  width: 100%;
+  font-size: 18px;
 }
 
-.App-header {
-  background-color: #282c34;
-  min-height: 100vh;
+.navbar-hr ul li {
+  margin: 20px 0;
+  transition: color 0.3s;
+  text-align: center; 
+}
+
+.navbar-hr ul li a {
+  display: block;
+  text-decoration: none;
+  color: #040404;
+  padding: 10px;
+}
+
+.navbar-hr ul li a:hover {
+  color: #007bff;
+}
+
+.navbar-hr ul li .pi {
+  font-size: 24px;
+  margin-bottom: 5px; 
+}
+
+.navbar-hr ul li p {
+  margin: 0;
+  font-size: 16px;
+}
+
+.icon {
   display: flex;
-  flex-direction: column;
+  justify-content: space-around;
   align-items: center;
-  justify-content: center;
-  font-size: calc(10px + 2vmin);
-  color: white;
+  margin-top: 20px;
+
+  
+  font-size: 24px;
+  color: #040404;
 }
 
-.App-link {
-  color: #61dafb;
+.icon :hover {
+  color: #007bff;
+  cursor: pointer;
+}
+.App .header{
+  background-color: #495057;
+  padding: 0px 10px;
+   font-size: 16px;
+  width: 100%;
+  height: 50px;
+  color: #f8f9fa;
+}
+.App .header h1{
+  margin-left: 300px;
+  font-size: 20px;
+}
+.App .box{
+  display: flex;
+  margin-left: 390px;
+  margin-right: 100px;
+  margin-top: 20px;
+  flex-direction: row;
+  justify-content: space-between;
+}
+.App .box .box1{
+  background-color: red;
+  width: 200px;
+  height: 100px;
+  margin-left: 20px;
+  margin-right: 20px;
+  border-radius: 5px;
+  display: flex;
+  justify-content: space-around;
+}
+.App .box .box1 .box-user{
+  color: #f8f9fa;
+  font-size: 24px;
+ text-align: center;
+ margin-top: 10px;
+}
+.App .box .box1 .box-user .box-text{
+  font-size: 16px;
+}
+.App .box .box1  .box-text h3{
+  margin-left: 80px;
+   color: #f8f9fa;
+   padding: 10px 20px;
+   font-size: 30px;     
+}
+.App .box .box1  .box-text p{
+    /* margin-top: 25px; */
+    font-size: 20px;
+    margin-right: 10px;
+ 
+}
+.App .box .box1 p{
+  color: #f8f9fa;
+}
+.App .box .box2{
+  background-color:purple;
+  width: 200px;
+  height: 100px;
+  margin-left: 20px;
+  margin-right: 20px;
+  border-radius: 5px;
+  display: flex;
+}
+.App .box .box2 .box-user{
+  color: #f8f9fa;
+  font-size: 24px;
+ text-align: center;
+ margin-top: 10px;
+}
+.App .box .box2 .box-user .box-text{
+  font-size: 16px;
+}
+.App .box .box2  .box-text h3{
+  margin-left: 80px;
+   color: #f8f9fa;
+   padding: 10px 20px;
+   font-size: 30px;     
+}
+.App .box .box2  .box-text p{
+    /* margin-top: 25px; */
+    font-size: 20px;
+    margin-right: 10px;
+
+}
+.App .box .box2 p{
+  color: #f8f9fa;
+}
+.App .box .box3{
+  background-color:green;
+  width: 200px;
+  height: 100px;
+  margin-left: 20px;
+  margin-right: 20px;
+  border-radius: 5px;
+  display: flex;
+}
+.App .box .box3 .box-user{
+  color: #f8f9fa;
+  font-size: 24px;
+ text-align: center;
+ margin-top: 10px;
+}
+.App .box .box3 .box-user .box-text{
+  font-size: 16px;
+}
+.App .box .box3  .box-text h3{
+  margin-left: 80px;
+   color: #f8f9fa;
+   padding: 10px 20px;
+   font-size: 30px;     
+}
+.App .box .box3  .box-text p{
+    /* margin-top: 25px; */
+    font-size: 20px;
+    margin-right: 10px;
+ 
+}
+.App .box .box3 p{
+  color: #f8f9fa;
+}
+.App .container{
+  margin-left: 430px;
+  margin-top: 70px;
+  text-align: center;
+  cursor: pointer;
+}
+.App .container .user{
+
+  /* padding: 20px; */
+  border-radius: 5px;
+  margin-bottom: 20px;
+}
+/* @media (max-width: 1200px) {
+  .App .header h1 {
+    margin-left: 200px;
+    font-size: 18px;
+  }
+
+  .App .box {
+    margin-left: 300px;
+    margin-right: 50px;
+    flex-wrap: wrap;
+  }
+  
+  .App .box .box1,
+  .App .box .box2,
+  .App .box .box3 {
+    width: 150px;
+    height: 80px;
+  }
+
+  .App .container {
+    margin-left: 310px;
+  }
 }
 
-@keyframes App-logo-spin {
-  from {
-    transform: rotate(0deg);
+@media (max-width: 768px) {
+  .navbar-hr {
+    width: 250px;
+    height: 100vh;
+    background-color: #f8f9fa;
+    border-right: 1px solid #dee2e6;
+    padding: 10px;
+    position: fixed;
+    top: 0;
+    left: 0;
+    overflow-y:hidden;
+    overflow-x:hidden;
+    box-shadow: 5px 5px 10px #495057;
   }
-  to {
-    transform: rotate(360deg);
+
+  .navbar-hr img {
+    width: 150px;
+    height: 90px;
+  }
+
+  .App .header h1 {
+    margin-left: 150px;
+    font-size: 16px;
+  }
+
+  .App .box {
+    margin-left: 220px;
+    margin-right: 30px;
+  }
+  
+  .App .box .box1,
+  .App .box .box2,
+  .App .box .box3 {
+    width: 130px;
+    height: 70px;
+  }
+
+  .App .container {
+    margin-left: 250px;
+    margin-top: 50px;
   }
 }
+
+@media (max-width: 576px) {
+  .navbar-hr {
+    width: 150px;
+  }
+
+  .navbar-hr img {
+    width: 120px;
+    height: 70px;
+  }
+
+  .App .header h1 {
+    margin-left: 120px;
+    font-size: 14px;
+  }
+
+  .App .box {
+    margin-left: 170px;
+    margin-right: 20px;
+    flex-direction: column;
+  }
+  
+  .App .box .box1,
+  .App .box .box2,
+  .App .box .box3 {
+    width: 100%;
+    height: 60px;
+    margin: 10px 0;
+  }
+
+  .App .container {
+    margin-left: 160px;
+  }
+} */
